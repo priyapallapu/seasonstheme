@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-01-2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .header_menu {
+            padding: 0 20px;
+            background-color: #fff !important;
+        }
+
+
+        .logo_icon_block {
+            padding: 20px 0;
+        }
+
+        .navbar-expand-lg {
+            float: right !important;
+            padding: 13px;
+        }
+
+        .cart_icon {
+            font-size: 17px;
+            color: gray;
+        }
+
+        .fa {
+            color: gray;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding: 8px 20px !important;
+        }
+
+        .search_icon {
+            padding: 20px 0;
+        }
+
+        .grey_bg {
+            background-color: #d3d3d342;
+        }
+
+        .white_bg {
+            background-color: #fff;
+        }
+
+        .image_block {
+            padding: 10px 20px;
+
+        }
+
+        .image_block img {
+            width: 70% !important;
+            padding-top: 40px;
+            cursor: cell;
+
+        }
+
+        .image_block img:hover {
+            transform: scale(1.1);
+            transition: 1s;
+
+        }
+
+        .text_block {
+            padding-top: 200px;
+        }
+
+        .heading_block h4 {
+            background-image: url(background_text_webblogger_priyanka_pallapu.png);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 60px;
+
+            text-transform: uppercase;
+        }
+
+        .two_block .heading_block h4 {
+            background-image: url(background_blue_text_webblogger_priyanka_pallapu.png);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 60px;
+
+            text-transform: uppercase;
+        }
+
+        .three_block .heading_block h4 {
+            background-image: url(background_three_text_webblogger_priyanka_pallapu.png);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 60px;
+
+            text-transform: uppercase;
+        }
+
+
+
+
+        .right {
+            text-align: right;
+        }
+
+        .two_block {
+            text-align: left !important;
+        }
+
+
+
+        .letter_spacing_style {
+            letter-spacing: 20px;
+        }
+
+        .letter_spacing_minor_style {
+            letter-spacing: -9px;
+        }
+
+        .read_more_button {
+            padding: 10px 40px;
+            color: #808080d6;
+        }
+
+        .read_more_block button {
+            border: 1px solid #808080d6;
+        }
+
+        button:hover a {
+            color: #fff !important;
+        }
+
+        button:hover {
+            border: 1px solid #000;
+            background-color: black;
+            color: #fff !important;
+            transition: 1s;
+        }
+
+        button a:hover {
+            color: #fff !important;
+        }
+
+        .content_block p {
+            color: #808080d6;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .theme_path {
+            text-align: center;
+            font-style: italic;
+            padding: 40px;
+
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .footer p {
+            padding: 10px;
+            text-align: center;
+            margin: 0px !important;
+        }
+
+        .footer img {
+            padding: 15px 100px;
+            margin: 0px !important;
+        }
+
+        @media only screen and (max-width:600px) {
+            .hide {
+                display: none !important;
+            }
+
+            .mobile_structure {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .text_block {
+                padding-top: 50px;
+            }
+
+            .heading_block h4 {
+                text-align: center;
+            }
+
+            .content_block p {
+                text-align: center;
+            }
+
+            .text_block {
+                text-align: center;
+            }
+
+            .img_mobile {
+                text-align: center;
+
+            }
+
+            .image_block {
+                text-align: center;
+            }
+
+            .footer img {
+                padding: 20px 0px;
+
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding: 8px 0px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Part -->
+    <div class="header_menu">
+        <div class="container ">
+            <div class="row mobile_structure">
+                <div class="col-md-1 logo_icon_block hide">
+                    <div class="cart_icon">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> {2}
+                    </div>
+                </div>
+                <div class="col-md-3 logo_icon_block">
+                    <div class="logo_img">
+                        <img src="webblogger_priyanka_pallapu.png" alt="webblogger_priyanka_pallapu">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <nav class="navbar navbar-expand-lg ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="col-md-1 hide">
+                    <i class="fa search_icon">&#xf002;</i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Header Part End -->
+
+    <!-- Banner Block One  -->
+    <div class="Banner_block one_block grey_bg">
+        <div class="container">
+            <div class="row">
+                <!-- Content Block -->
+                <div class="col-md-5 text_block">
+                    <div class="heading_block">
+                        <h4 class="right"> <span class="letter_spacing_minor_style hide">-----</span> <span
+                                class="letter_spacing_style">
+                                AUTUM</span>N
+                        </h4>
+                    </div>
+                    <div class="content_block">
+                        <p class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eum eius quas,
+                            minima animi
+                            obcaecati. Corporis dolore in voluptate perspiciatis! Neque eius tempore recusandae
+                            reprehenderit!</p>
+                    </div>
+                    <div class="read_more_block right center">
+                        <button class="read_more_button ">
+                            <a href="https://www.instagram.com/__webblogger__/" target="_blank"> See More</a>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Image Block -->
+                <div class="col-md-7 image_block right">
+                    <img src="block_autumn_webblogger_priyanka_pallapu.png" alt="webblogger_priyanka_pallapu">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner Block Two -->
+    <div class="Banner_block two_block white_bg">
+        <div class="container">
+            <div class="row">
+                <!-- Image Block -->
+                <div class="col-md-7 image_block center">
+                    <img src="block_spring_webblogger_priyanka_pallapu.png" alt="webblogger_priyanka_pallapu">
+                </div>
+                <!-- Content Block -->
+                <div class="col-md-5 text_block">
+                    <div class="heading_block">
+                        <h4> <span class="letter_spacing_style">
+                                SPRING</span><span class="letter_spacing_minor_style hide">-----</span>
+                        </h4>
+                    </div>
+                    <div class="content_block">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eum eius quas, minima animi
+                            obcaecati. Corporis dolore in voluptate perspiciatis! Neque eius tempore recusandae
+                            reprehenderit!</p>
+                    </div>
+                    <div class="read_more_block">
+                        <button class="read_more_button">
+                            <a href="https://www.instagram.com/__webblogger__/" target="_blank"> See More</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Block Three -->
+    <div class="Banner_block three_block grey_bg">
+        <div class="container">
+            <div class="row">
+                <!-- Content Block -->
+                <div class="col-md-5 text_block">
+                    <div class="heading_block">
+                        <h4 class="right"> <span class="letter_spacing_minor_style hide">-----</span> <span
+                                class="letter_spacing_style">
+                                WINTE</span>R
+                        </h4>
+                    </div>
+                    <div class="content_block">
+                        <p class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eum eius quas,
+                            minima animi
+                            obcaecati. Corporis dolore in voluptate perspiciatis! Neque eius tempore recusandae
+                            reprehenderit!</p>
+                    </div>
+                    <div class="read_more_block right center">
+                        <button class="read_more_button ">
+                            <a href="https://www.instagram.com/__webblogger__/" target="_blank"> See More</a>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Image Block -->
+                <div class="col-md-7 image_block right">
+                    <img src="block_winter_webblogger_priyanka_pallapu.png" alt="webblogger_priyanka_pallapu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Block Four  -->
+    <div class="Banner_block Four_block white_bg">
+        <div class="container">
+            <div class="row">
+                <!-- Image Block -->
+                <div class="col-md-7 image_block left">
+                    <img src="block_Summer_webblogger_priyanka_pallapu.png" class="left"
+                        alt="webblogger_priyanka_pallapu">
+                </div>
+                <!-- Content Block -->
+                <div class="col-md-5 text_block">
+                    <div class="heading_block">
+                        <h4> <span class="letter_spacing_style">
+                                Summer</span><span class="letter_spacing_minor_style hide">-----</span>
+                        </h4>
+                    </div>
+                    <div class="content_block">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eum eius quas, minima animi
+                            obcaecati. Corporis dolore in voluptate perspiciatis! Neque eius tempore recusandae
+                            reprehenderit!</p>
+                    </div>
+                    <div class="read_more_block">
+                        <button class="read_more_button">
+                            <a href="https://www.instagram.com/__webblogger__/" target="_blank"> See More</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- source code part -->
+    <p class="theme_path">
+        <a href="https://github.com/priyapallapu/seasonstheme" target="_blank">
+            https://github.com/priyapallapu/seasonstheme</a>
+    </p>
+
+    <!-- Footer part -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-2 img_mobile">
+                <img src="webblogger_white_priyanka_pallapu.png" alt="webblogger_white_priyanka_pallapu">
+            </div>
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-2">
+                <p>
+                    @2023 By Webblogger
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <!-- Scripts -->
+</body>
+
+</html>
